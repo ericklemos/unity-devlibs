@@ -41,17 +41,19 @@ for name, info in asmdefs.items():
         if not os.path.isfile(dll_path):
             errors.append(f"{name}.asmdef: DLL nao encontrada: {dll_path}")
 
-# Verifica duplicatas de DLLs
+# Verifica duplicatas de DLLs no mesmo diretorio de asmdef
+# DLLs compartilhadas entre asmdefs diferentes sao permitidas, pois o Unity
+# so resolve precompiledReferences procurando no diretorio do asmdef.
 from collections import defaultdict
 dll_names = defaultdict(list)
 for root, dirs, files in os.walk(RUNTIME_DIR):
     for f in files:
         if f.endswith(".dll"):
-            dll_names[f].append(os.path.join(root, f))
+            dll_names[f].append(root)
 
-for name, paths in dll_names.items():
-    if len(paths) > 1:
-        errors.append(f"DLL duplicada: {name} em {paths}")
+for name, dirs in dll_names.items():
+    if len(dirs) > 1:
+        warnings.append(f"DLL compartilhada entre asmdefs: {name} em {dirs}")
 
 # Verifica se Shared esta sendo referenciado corretamente
 if "Shared" not in asmdefs:

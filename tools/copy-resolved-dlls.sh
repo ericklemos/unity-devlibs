@@ -53,6 +53,7 @@ copy_dll() {
 # R3
 DEST="$PROJECT_DIR/Runtime/Cysharp/R3/Runtime"
 copy_dll "r3" "1.3.1" "$DEST" "R3.dll"
+copy_dll "microsoft.bcl.asyncinterfaces" "6.0.0" "$DEST" "Microsoft.Bcl.AsyncInterfaces.dll"
 copy_dll "microsoft.bcl.timeprovider" "8.0.0" "$DEST" "Microsoft.Bcl.TimeProvider.dll"
 copy_dll "system.threading.channels" "8.0.0" "$DEST" "System.Threading.Channels.dll"
 copy_dll "system.componentmodel.annotations" "5.0.0" "$DEST" "System.ComponentModel.Annotations.dll"
@@ -60,6 +61,7 @@ copy_dll "system.componentmodel.annotations" "5.0.0" "$DEST" "System.ComponentMo
 # MemoryPack
 DEST="$PROJECT_DIR/Runtime/Cysharp/MemoryPack/Runtime"
 copy_dll "memorypack.core" "1.21.4" "$DEST" "MemoryPack.Core.dll"
+copy_dll "system.collections.immutable" "8.0.0" "$DEST" "System.Collections.Immutable.dll"
 
 # ZLinq
 DEST="$PROJECT_DIR/Runtime/Cysharp/ZLinq/Runtime"

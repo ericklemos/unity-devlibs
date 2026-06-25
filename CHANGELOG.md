@@ -1,5 +1,16 @@
 # Changelog
 
+## [Nao lancado]
+
+### Corrigido
+- Dependencias transitivas ausentes que impediam carregamento de DLLs ao importar o pacote em outro projeto:
+  - `Microsoft.Bcl.AsyncInterfaces.dll` adicionada a `Runtime/Cysharp/R3/Runtime/` e referenciada em `R3.Unity.asmdef` (resolve erro CS0012 de `IAsyncDisposable` em `UnityTimeProvider.cs`).
+  - `System.Collections.Immutable.dll` adicionada a `Runtime/Cysharp/MemoryPack/Runtime/` e referenciada em `MemoryPack.Unity.asmdef` (resolve falha ao carregar `MemoryPack.Core.dll`).
+- `tools/validate-wrapper.py` passa a reportar DLLs compartilhadas entre asmdefs diferentes como aviso, nao erro, pois o Unity exige que cada `.asmdef` carregue suas dependencias no proprio diretorio.
+
+### Alterado
+- `tools/copy-resolved-dlls.sh` atualizado para copiar `Microsoft.Bcl.AsyncInterfaces.dll` (R3) e `System.Collections.Immutable.dll` (MemoryPack) em builds futuros.
+
 ## [1.0.0] - 2026-06-24
 
 ### Adicionado

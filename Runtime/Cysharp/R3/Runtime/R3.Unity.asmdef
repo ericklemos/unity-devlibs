@@ -10,6 +10,7 @@
     "overrideReferences": true,
     "precompiledReferences": [
         "R3.dll",
+        "Microsoft.Bcl.AsyncInterfaces.dll",
         "Microsoft.Bcl.TimeProvider.dll",
         "System.ComponentModel.Annotations.dll",
         "System.Threading.Channels.dll"
