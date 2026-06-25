@@ -1,0 +1,22 @@
+{
+  "name": "com.seuprojeto.devlibs",
+  "version": "1.0.0",
+  "displayName": "Unity DevLibs",
+  "description": "Wrapper UPM privado e autocontido com Cysharp libs + VContainer para Unity 6.3 LTS. Tudo incluso, zero gambiarras.",
+  "unity": "6000.3",
+  "unityRelease": "0f1",
+  "author": {
+    "name": "Seu Projeto",
+    "email": "dev@seuprojeto.com"
+  },
+  "keywords": [
+    "cysharp",
+    "vcontainer",
+    "wrapper",
+    "unity6",
+    "devlibs"
+  ],
+  "dependencies": {},
+  "samples": [],
+  "hideInEditor": false
+}

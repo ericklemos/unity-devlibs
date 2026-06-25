@@ -1,0 +1,24 @@
+{
+    "name": "MasterMemory",
+    "rootNamespace": "MasterMemory",
+    "references": [
+        "Shared",
+        "MessagePack"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "MasterMemory.dll",
+        "MasterMemory.Annotations.dll",
+        "Microsoft.Bcl.AsyncInterfaces.dll",
+        "Microsoft.NET.StringTools.dll",
+        "System.Collections.Immutable.dll",
+        "System.Threading.Tasks.Extensions.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

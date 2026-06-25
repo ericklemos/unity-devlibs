@@ -1,0 +1,14 @@
+# Arquivos baixados temporariamente para montar o wrapper
+packages/
+tools/resolve-nuget/
+
+# Unity temporarios
+temp/
+obj/
+bin/
+Library/
+*.csproj.user
+
+# SO
+.DS_Store
+Thumbs.db
