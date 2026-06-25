@@ -1,5 +1,5 @@
 {
-    "name": "MessagePack",
+    "name": "MessagePack.Unity",
     "rootNamespace": "MessagePack",
     "references": [
         "Shared"

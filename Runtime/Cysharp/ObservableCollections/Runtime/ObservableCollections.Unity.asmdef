@@ -1,5 +1,5 @@
 {
-    "name": "ObservableCollections",
+    "name": "ObservableCollections.Unity",
     "rootNamespace": "ObservableCollections",
     "references": [
         "Shared"

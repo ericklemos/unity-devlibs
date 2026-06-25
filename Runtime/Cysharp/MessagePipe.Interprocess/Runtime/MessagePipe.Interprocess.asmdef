@@ -3,7 +3,7 @@
     "rootNamespace": "MessagePipe",
     "references": [
         "MessagePipe",
-        "MessagePack",
+        "MessagePack.Unity",
         "UniTask"
     ],
     "includePlatforms": [],

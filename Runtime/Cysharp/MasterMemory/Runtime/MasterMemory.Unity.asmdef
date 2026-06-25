@@ -1,9 +1,9 @@
 {
-    "name": "MasterMemory",
+    "name": "MasterMemory.Unity",
     "rootNamespace": "MasterMemory",
     "references": [
         "Shared",
-        "MessagePack"
+        "MessagePack.Unity"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
